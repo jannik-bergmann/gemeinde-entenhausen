@@ -1,0 +1,57 @@
+/*
+$primary:       $blue !default;
+$secondary:     $gray-600 !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $gray-800 !default;
+*/
+
+$primary: #EBFFBA;
+$secondary: #C9FFBA;
+$info: #FFF8BA;
+
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url("../fonts/Merriweather-Regular.ttf") format('truetype');
+}
+
+$font-family-base: 'CustomFont', sans-serif;
+
+#content{
+    padding: 20px;
+}
+
+.navbar-brand{
+    font-weight: bold;
+}
+
+.active{
+    font-weight: bold;
+}
+
+.img-border{
+    border-style: solid;
+    border-width: 1px;
+}
+
+/*Src-Sticky Footer: https://startbootstrap.com/snippets/sticky-footer-flexbox/*/
+html,
+body {
+  height: 100%;
+}
+
+#main {
+
+  flex: 1 0 auto;
+}
+
+#footer {
+  flex-shrink: none;
+
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap";

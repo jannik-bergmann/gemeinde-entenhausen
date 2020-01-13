@@ -1,0 +1,17 @@
+{
+  "name": "hausarbeit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "node-sass": "^4.13.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Hier ist ein Test :)\" && exit 1",
+    "scss": "node-sass --w scss/custom.scss css/customBootstrap.css"
+  },
+  "author": "",
+  "license": "ISC"
+}

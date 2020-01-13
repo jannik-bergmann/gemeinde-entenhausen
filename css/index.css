@@ -1,0 +1,12 @@
+#content{
+    padding: 56px;
+}
+#email{
+    color: black;
+}
+
+.crop {
+    width: 350px;
+    height: 200px;
+    overflow: hidden;
+}

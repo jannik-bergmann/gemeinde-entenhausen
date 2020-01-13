@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/customBootstrap.css">
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="../js/init.js"></script>
+
+    <title id="title"></title>
+</head>
+
+<body class="d-flex flex-column">
+
+    <div id="main">
+        <!--https://bootstrapious.com/p/how-to-build-a-working-bootstrap-contact-form-->
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-xl-8 offset-xl-2 py-5">
+
+                    <h1>Kontaktformular </h1>
+
+                    <p class="lead">Um uns eine Nachricht zu übermitteln, füllen Sie bitte das untenstehende Formular
+                        aus.
+                    </p>
+
+                    <!-- We're going to place the form here in the next step -->
+                    <form id="contact-form" method="post" action="#" role="form">
+
+                        <div class="messages"></div>
+
+                        <div class="controls">
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_name">Vorname *</label>
+                                        <input id="form_name" type="text" name="name" class="form-control"
+                                            placeholder="Bitte geben Sie ihren Vornamen ein" required="required"
+                                            data-error="Firstname is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_lastname">Nachname *</label>
+                                        <input id="form_lastname" type="text" name="surname" class="form-control"
+                                            placeholder="Bitte geben Sie ihren Nachnamen ein *" required="required"
+                                            data-error="Lastname is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_email">Email *</label>
+                                        <input id="form_email" type="email" name="email" class="form-control"
+                                            placeholder="Bitte geben Sie ihre Email an *" required="required"
+                                            data-error="Valid email is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_need">Anliegen *</label>
+                                        <select id="form_need" name="need" class="form-control" required="required"
+                                            data-error="Please specify your need.">
+                                            <option value=""></option>
+                                            <option value="Request quotation">Bauangelegenheit</option>
+                                            <option value="Request order status">Rechtsangelegenheit</option>
+                                            <option value="Request copy of an invoice">Allgemein
+                                            </option>
+
+                                        </select>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="form_message">Nachricht *</label>
+                                        <textarea id="form_message" name="message" class="form-control"
+                                            placeholder="Geben Sie ihre Nachricht ein *" rows="4" required="required"
+                                            data-error="Please, leave us a message."></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="submit" class="btn btn-secondary btn-send" value="Formular senden">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p class="text-muted">
+                                        <strong>*</strong>Pflichtfelder
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
